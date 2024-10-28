@@ -20,3 +20,8 @@ This project sets up a FastAPI application to handle HTTP/HTTPS Amazon SNS subsc
 1. **Install dependencies**:
    ```bash
    pip install fastapi uvicorn boto3
+
+## How to run
+    ```bash
+    uvicorn main:app --host 0.0.0.0 --port 8000 --workers 4 --loop asyncio --access-log
+
